@@ -4,7 +4,7 @@ import Button from 'react-bootstrap/lib/Button'
 import CustomerDetails from './CustomerDetails'
 import axios from 'axios'
 
-export default class Customers extends Component {
+export default class SupportedCities extends Component {
 
   constructor(props) {
     super(props)
@@ -37,8 +37,6 @@ export default class Customers extends Component {
               <Panel.Title componentClass="h3">{customer.name}</Panel.Title>
             </Panel.Heading>
             <Panel.Body>
-              <p>{customer.email}</p>
-              <p>{customer.phone}</p>
               <Button bsStyle="info" onClick={() => this.setState({selectedCustomer: customer.id})}>
 
                 Click to View Details
