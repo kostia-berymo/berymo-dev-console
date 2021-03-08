@@ -1,14 +1,14 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import SupportedCities from './SupportedCities'
+import SupportedCities from './SupportedCities';
+import Mapbox from './mapbox';
 import { BrowserRouter as Router, Switch, Route, Redirect} from 'react-router-dom';
 
 
 function App() {
     console.log("Host URL"+process.env.PUBLIC_URL);
     return (
-
       <Router basename={process.env.PUBLIC_URL}>
         <div className="App">
         <header className="App-header">
@@ -20,6 +20,7 @@ function App() {
                   <Redirect to="/driverapi"/>
                 )}/>
                  <Route exact path='/driverapi' component={SupportedCities} />
+                 <Route exact path='/mapbox' component={Mapbox} />
           </Switch>
       </div>
     </Router>
