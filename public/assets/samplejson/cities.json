@@ -1,0 +1,442 @@
+{
+    "supported_cities": [
+        {
+            "id": 11,
+            "name": "Sacramento",
+            "slug": "sacramento",
+            "base_price": 5.95,
+            "delivery_prices": "{\"items\": [{\"mile\": 10, \"amount\": 5.95},{\"mile\": 15, \"amount\": 7.95},{\"mile\": 20, \"amount\": 9.95},{\"mile\": 25, \"amount\": 11.95}]}",
+            "county_name": "Sacramento",
+            "timezone": "America/Los_Angeles",
+            "is_active": true,
+            "is_discharge_single_ride_active": false,
+            "polygon_points": "[\r\n            [\r\n              -122.71728515624999,\r\n              37.900865092570065\r\n            ],\r\n            [\r\n              -119.32250976562499,\r\n              37.900865092570065\r\n            ],\r\n            [\r\n              -119.32250976562499,\r\n              39.58029027440865\r\n            ],\r\n            [\r\n              -122.71728515624999,\r\n              39.58029027440865\r\n            ],\r\n            [\r\n              -122.71728515624999,\r\n              37.900865092570065\r\n            ]\r\n          ]",
+            "return_ride_limit_on_mile": 10.0,
+            "is_flat_app_active": true,
+            "is_places_app_active": false,
+            "is_delivery_app_active": true,
+            "driver_search_limit": 80,
+            "package_delivery_start_at": "1970-01-01T09:00:00-08:00",
+            "package_delivery_end_at": "1970-01-01T04:00:00-08:00",
+            "fees": [
+                {
+                    "id": 10,
+                    "code": "driver.instant_payout",
+                    "name": "Driver Instant Payout",
+                    "description": "Driver Instant Payout",
+                    "amount": 0.5,
+                    "unit": "PERCENTAGE",
+                    "is_visible": true,
+                    "is_global": false
+                },
+                {
+                    "id": 11,
+                    "code": "driver.weekly_payout",
+                    "name": "Driver Weekly Payout",
+                    "description": "Driver Weekly Payout",
+                    "amount": 0.0,
+                    "unit": "PERCENTAGE",
+                    "is_visible": false,
+                    "is_global": false
+                },
+                {
+                    "id": 12,
+                    "code": "driver.commission_rate",
+                    "name": "Driver Commission Rate",
+                    "description": "Driver Commission Rate",
+                    "amount": 0.7,
+                    "unit": "PERCENTAGE",
+                    "is_visible": true,
+                    "is_global": false
+                },
+                {
+                    "id": 13,
+                    "code": "stripe.fee_rate",
+                    "name": "Stripe Fee Rate",
+                    "description": "Stripe Fee Rate",
+                    "amount": 0.029,
+                    "unit": "PERCENTAGE",
+                    "is_visible": true,
+                    "is_global": false
+                },
+                {
+                    "id": 14,
+                    "code": "stripe.fee",
+                    "name": "Stripe Fee",
+                    "description": "Stripe Fee",
+                    "amount": 0.3,
+                    "unit": "CURRENCY",
+                    "is_visible": true,
+                    "is_global": false
+                },
+                {
+                    "id": 15,
+                    "code": "twilio.fee",
+                    "name": "Twilio Fee Rate",
+                    "description": "Twilio Fee Rate",
+                    "amount": 0.1,
+                    "unit": "PERCENTAGE",
+                    "is_visible": true,
+                    "is_global": false
+                },
+                {
+                    "id": 16,
+                    "code": "berymo.commission_rate",
+                    "name": "Berymo Commission Rate",
+                    "description": "Berymo Commission Rate",
+                    "amount": 0.3,
+                    "unit": "PERCENTAGE",
+                    "is_visible": true,
+                    "is_global": false
+                },
+                {
+                    "id": 17,
+                    "code": "berymo.service_fee",
+                    "name": "Berymo Service Fee",
+                    "description": "Berymo Service Fee",
+                    "amount": 0.85,
+                    "unit": "CURRENCY",
+                    "is_visible": true,
+                    "is_global": false
+                },
+                {
+                    "id": 18,
+                    "code": "ride.delivery.return_fee",
+                    "name": "Ride Delivery Return Fee",
+                    "description": "Ride Delivery Return Fee",
+                    "amount": 1.0,
+                    "unit": "CURRENCY",
+                    "is_visible": true,
+                    "is_global": false
+                }
+            ],
+            "tips": [
+                {
+                    "id": 1,
+                    "name": "Sacramento",
+                    "amount": 2.0,
+                    "currency": "USD",
+                    "type": "single",
+                    "is_visible": true,
+                    "created_at": "2021-01-02T13:14:36-08:00",
+                    "updated_at": "2021-01-02T13:14:51-08:00"
+                },
+                {
+                    "id": 2,
+                    "name": "Sacramento2",
+                    "amount": 3.0,
+                    "currency": "USD",
+                    "type": "single",
+                    "is_visible": true,
+                    "created_at": "2021-01-02T13:15:15-08:00",
+                    "updated_at": "2021-01-02T13:15:15-08:00"
+                },
+                {
+                    "id": 3,
+                    "name": "Sacramento3",
+                    "amount": 7.0,
+                    "currency": "USD",
+                    "type": "single",
+                    "is_visible": true,
+                    "created_at": "2021-01-02T13:15:27-08:00",
+                    "updated_at": "2021-01-02T13:15:27-08:00"
+                }
+            ],
+            "tips_and_tricks": [],
+            "splash_messages": [],
+            "reject_reasons": []
+        },
+        {
+            "id": 12,
+            "name": "Izmir",
+            "slug": "izmir",
+            "base_price": 5.95,
+            "delivery_prices": "{\"items\": [{\"mile\": 10, \"amount\": 5.95},{\"mile\": 15, \"amount\": 7.95},{\"mile\": 20, \"amount\": 9.95},{\"mile\": 25, \"amount\": 11.95}]}",
+            "county_name": "Izmir",
+            "timezone": "America/Los_Angeles",
+            "is_active": true,
+            "is_discharge_single_ride_active": false,
+            "polygon_points": "[\r\n            [\r\n              78.365478515625,\r\n              17.257547785470145\r\n            ],\r\n            [\r\n              78.63052368164062,\r\n              17.257547785470145\r\n            ],\r\n            [\r\n              78.63052368164062,\r\n              17.542570145137514\r\n            ],\r\n            [\r\n              78.365478515625,\r\n              17.542570145137514\r\n            ],\r\n            [\r\n              78.365478515625,\r\n              17.257547785470145\r\n            ]\r\n          ]",
+            "return_ride_limit_on_mile": 10.0,
+            "is_flat_app_active": true,
+            "is_places_app_active": true,
+            "is_delivery_app_active": true,
+            "driver_search_limit": 80,
+            "package_delivery_start_at": "1970-01-01T09:00:00-08:00",
+            "package_delivery_end_at": "1970-01-01T16:00:00-08:00",
+            "fees": [
+                {
+                    "id": 19,
+                    "code": "driver.instant_payout",
+                    "name": "Driver Instant Payout",
+                    "description": "Driver Instant Payout",
+                    "amount": 0.5,
+                    "unit": "PERCENTAGE",
+                    "is_visible": true,
+                    "is_global": false
+                },
+                {
+                    "id": 20,
+                    "code": "driver.weekly_payout",
+                    "name": "Driver Weekly Payout",
+                    "description": "Driver Weekly Payout",
+                    "amount": 0.0,
+                    "unit": "PERCENTAGE",
+                    "is_visible": false,
+                    "is_global": false
+                },
+                {
+                    "id": 21,
+                    "code": "driver.commission_rate",
+                    "name": "Driver Commission Rate",
+                    "description": "Driver Commission Rate",
+                    "amount": 0.7,
+                    "unit": "PERCENTAGE",
+                    "is_visible": true,
+                    "is_global": false
+                },
+                {
+                    "id": 22,
+                    "code": "stripe.fee_rate",
+                    "name": "Stripe Fee Rate",
+                    "description": "Stripe Fee Rate",
+                    "amount": 0.03,
+                    "unit": "PERCENTAGE",
+                    "is_visible": true,
+                    "is_global": false
+                },
+                {
+                    "id": 23,
+                    "code": "stripe.fee",
+                    "name": "Stripe Fee",
+                    "description": "Stripe Fee",
+                    "amount": 0.3,
+                    "unit": "CURRENCY",
+                    "is_visible": true,
+                    "is_global": false
+                },
+                {
+                    "id": 24,
+                    "code": "twilio.fee",
+                    "name": "Twilio Fee Rate",
+                    "description": "Twilio Fee Rate",
+                    "amount": 0.1,
+                    "unit": "PERCENTAGE",
+                    "is_visible": true,
+                    "is_global": false
+                },
+                {
+                    "id": 25,
+                    "code": "berymo.commission_rate",
+                    "name": "Berymo Commission Rate",
+                    "description": "Berymo Commission Rate",
+                    "amount": 0.3,
+                    "unit": "PERCENTAGE",
+                    "is_visible": true,
+                    "is_global": false
+                },
+                {
+                    "id": 26,
+                    "code": "berymo.service_fee",
+                    "name": "Berymo Service Fee",
+                    "description": "Berymo Service Fee",
+                    "amount": 0.85,
+                    "unit": "CURRENCY",
+                    "is_visible": true,
+                    "is_global": false
+                },
+                {
+                    "id": 27,
+                    "code": "ride.delivery.return_fee",
+                    "name": "Ride Delivery Return Fee",
+                    "description": "Ride Delivery Return Fee",
+                    "amount": 1.0,
+                    "unit": "CURRENCY",
+                    "is_visible": true,
+                    "is_global": false
+                }
+            ],
+            "tips": [
+                {
+                    "id": 4,
+                    "name": "Izmir",
+                    "amount": 3.0,
+                    "currency": "USD",
+                    "type": "single",
+                    "is_visible": true,
+                    "created_at": "2021-01-03T06:16:00-08:00",
+                    "updated_at": "2021-01-03T06:16:00-08:00"
+                },
+                {
+                    "id": 5,
+                    "name": "Izmir2",
+                    "amount": 5.0,
+                    "currency": "USD",
+                    "type": "single",
+                    "is_visible": true,
+                    "created_at": "2021-01-03T06:16:14-08:00",
+                    "updated_at": "2021-01-03T06:16:14-08:00"
+                },
+                {
+                    "id": 6,
+                    "name": "Izmir3",
+                    "amount": 7.0,
+                    "currency": "USD",
+                    "type": "single",
+                    "is_visible": true,
+                    "created_at": "2021-01-03T06:16:26-08:00",
+                    "updated_at": "2021-01-03T06:16:26-08:00"
+                }
+            ],
+            "tips_and_tricks": [],
+            "splash_messages": [],
+            "reject_reasons": []
+        },
+        {
+            "id": 13,
+            "name": "Los Angeles",
+            "slug": "los-angeles",
+            "base_price": 5.95,
+            "delivery_prices": "{\"items\": [{\"mile\": 10, \"amount\": 5.95},{\"mile\": 15, \"amount\": 7.95},{\"mile\": 20, \"amount\": 9.95},{\"mile\": 25, \"amount\": 11.95}]}",
+            "county_name": "Los Angeles",
+            "timezone": "America/Los_Angeles",
+            "is_active": true,
+            "is_discharge_single_ride_active": false,
+            "polygon_points": "[\r\n            [\r\n              -118.31520080566406,\r\n              34.04042715062517\r\n            ],\r\n            [\r\n              -118.2740020751953,\r\n              34.04042715062517\r\n            ],\r\n            [\r\n              -118.2740020751953,\r\n              34.06887157175501\r\n            ],\r\n            [\r\n              -118.31520080566406,\r\n              34.06887157175501\r\n            ],\r\n            [\r\n              -118.31520080566406,\r\n              34.04042715062517\r\n            ]\r\n          ]",
+            "return_ride_limit_on_mile": 10.0,
+            "is_flat_app_active": true,
+            "is_places_app_active": false,
+            "is_delivery_app_active": true,
+            "driver_search_limit": 80,
+            "package_delivery_start_at": "1970-01-01T20:00:00-08:00",
+            "package_delivery_end_at": "1970-01-01T04:00:00-08:00",
+            "fees": [
+                {
+                    "id": 28,
+                    "code": "driver.instant_payout",
+                    "name": "Driver Instant Payout",
+                    "description": "Driver Instant Payout",
+                    "amount": 0.0,
+                    "unit": "PERCENTAGE",
+                    "is_visible": false,
+                    "is_global": false
+                },
+                {
+                    "id": 29,
+                    "code": "driver.weekly_payout",
+                    "name": "Driver Weekly Payout",
+                    "description": "Driver Weekly Payout",
+                    "amount": 0.0,
+                    "unit": "PERCENTAGE",
+                    "is_visible": false,
+                    "is_global": false
+                },
+                {
+                    "id": 30,
+                    "code": "driver.commission_rate",
+                    "name": "Driver Commission Rate",
+                    "description": "Driver Commission Rate",
+                    "amount": 0.0,
+                    "unit": "PERCENTAGE",
+                    "is_visible": false,
+                    "is_global": false
+                },
+                {
+                    "id": 31,
+                    "code": "stripe.fee_rate",
+                    "name": "Stripe Fee Rate",
+                    "description": "Stripe Fee Rate",
+                    "amount": 0.0,
+                    "unit": "PERCENTAGE",
+                    "is_visible": false,
+                    "is_global": false
+                },
+                {
+                    "id": 32,
+                    "code": "stripe.fee",
+                    "name": "Stripe Fee",
+                    "description": "Stripe Fee",
+                    "amount": 0.0,
+                    "unit": "CURRENCY",
+                    "is_visible": false,
+                    "is_global": false
+                },
+                {
+                    "id": 33,
+                    "code": "twilio.fee",
+                    "name": "Twilio Fee Rate",
+                    "description": "Twilio Fee Rate",
+                    "amount": 0.0,
+                    "unit": "PERCENTAGE",
+                    "is_visible": false,
+                    "is_global": false
+                },
+                {
+                    "id": 34,
+                    "code": "berymo.commission_rate",
+                    "name": "Berymo Commission Rate",
+                    "description": "Berymo Commission Rate",
+                    "amount": 0.0,
+                    "unit": "PERCENTAGE",
+                    "is_visible": false,
+                    "is_global": false
+                },
+                {
+                    "id": 35,
+                    "code": "berymo.service_fee",
+                    "name": "Berymo Service Fee",
+                    "description": "Berymo Service Fee",
+                    "amount": 0.0,
+                    "unit": "CURRENCY",
+                    "is_visible": false,
+                    "is_global": false
+                },
+                {
+                    "id": 36,
+                    "code": "ride.delivery.return_fee",
+                    "name": "Ride Delivery Return Fee",
+                    "description": "Ride Delivery Return Fee",
+                    "amount": 0.0,
+                    "unit": "CURRENCY",
+                    "is_visible": false,
+                    "is_global": false
+                }
+            ],
+            "tips": [
+                {
+                    "id": 7,
+                    "name": "SINGLE",
+                    "amount": 3.0,
+                    "currency": "USD",
+                    "type": "single",
+                    "is_visible": true,
+                    "created_at": "2021-03-02T20:29:02-08:00",
+                    "updated_at": "2021-03-02T20:29:02-08:00"
+                },
+                {
+                    "id": 8,
+                    "name": "SINGLE",
+                    "amount": 5.0,
+                    "currency": "USD",
+                    "type": "single",
+                    "is_visible": true,
+                    "created_at": "2021-03-02T20:29:27-08:00",
+                    "updated_at": "2021-03-02T20:29:27-08:00"
+                },
+                {
+                    "id": 9,
+                    "name": "SINGLE",
+                    "amount": 7.0,
+                    "currency": "USD",
+                    "type": "single",
+                    "is_visible": true,
+                    "created_at": "2021-03-02T20:29:59-08:00",
+                    "updated_at": "2021-03-02T20:29:59-08:00"
+                }
+            ],
+            "tips_and_tricks": [],
+            "splash_messages": [],
+            "reject_reasons": []
+        }
+    ]
+}
