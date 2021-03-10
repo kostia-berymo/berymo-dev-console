@@ -13,9 +13,11 @@ export default class SupportedCities extends Component {
     }
   }
 
+
   //function which is called the first time the component loads
   componentDidMount() {
     this.getCustomerData();
+    console.log("hey Devi");
   }
 
   //Function to get the Customer Data from json
