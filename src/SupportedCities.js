@@ -9,35 +9,31 @@ export default class SupportedCities extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      selectedCustomer: 1
+      cities: null,
     }
   }
 
   //function which is called the first time the component loads
   componentDidMount() {
-    this.getCustomerData();
+    axios.get('assets/samplejson/cities.json').then(response => {
+      this.setState({cities: response.data.supported_cities})
+    })
   }
 
-  //Function to get the Customer Data from json
-  getCustomerData() {
-    axios.get('assets/samplejson/customerlist.json').then(response => {
-      this.setState({customerList: response})
-    })
-  };
 
   render() {
-    if (!this.state.customerList)
+    if (!this.state.cities)
       return (<p>Loading data</p>)
     return (<div className="addmargin">
       <div className="col-md-3">
         {
 
-          this.state.customerList.data.map(customer => <Panel bsStyle="info" key={customer.name} className="centeralign">
+          this.state.cities.map(c => <Panel bsStyle="info" key={c.name} className="centeralign">
             <Panel.Heading>
-              <Panel.Title componentClass="h3">{customer.name}</Panel.Title>
+              <Panel.Title componentClass="h3">{c.name}</Panel.Title>
             </Panel.Heading>
             <Panel.Body>
-              <Button bsStyle="info" onClick={() => this.setState({selectedCustomer: customer.id})}>
+              <Button bsStyle="info">
 
                 Click to View Details
 
@@ -48,7 +44,7 @@ export default class SupportedCities extends Component {
         }
       </div>
       <div className="col-md-6">
-        <CustomerDetails val={this.state.selectedCustomer}/>
+        {/* <CustomerDetails val={this.state.selectedCustomer}/> */}
       </div>
     </div>)
   }
