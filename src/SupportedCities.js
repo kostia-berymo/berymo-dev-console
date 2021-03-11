@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import Panel from 'react-bootstrap/lib/Panel'
 import Button from 'react-bootstrap/lib/Button'
-import CityDetails from './CityDetails'
+import CustomerDetails from './CustomerDetails'
 import axios from 'axios'
 
 export default class SupportedCities extends Component {
@@ -9,31 +9,35 @@ export default class SupportedCities extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      cities: ''
+      selectedCustomer: 1
     }
   }
 
   //function which is called the first time the component loads
   componentDidMount() {
-    axios.get('assets/samplejson/cities.json').then(response => {
-      this.setState({cities: response.data.supported_cities})
-    })
+    this.getCustomerData();
   }
 
+  //Function to get the Customer Data from json
+  getCustomerData() {
+    axios.get('assets/samplejson/customerlist.json').then(response => {
+      this.setState({customerList: response})
+    })
+  };
 
   render() {
-    if (!this.state.cities)
+    if (!this.state.customerList)
       return (<p>Loading data</p>)
     return (<div className="addmargin">
       <div className="col-md-3">
         {
 
-          this.state.cities.map(location => <Panel bsStyle="info" key={location.name} className="centeralign">
+          this.state.customerList.data.map(customer => <Panel bsStyle="info" key={customer.name} className="centeralign">
             <Panel.Heading>
-              <Panel.Title componentClass="h3">{location.name}</Panel.Title>
+              <Panel.Title componentClass="h3">{customer.name}</Panel.Title>
             </Panel.Heading>
             <Panel.Body>
-              <Button bsStyle="info">
+              <Button bsStyle="info" onClick={() => this.setState({selectedCustomer: customer.id})}>
 
                 Click to View Details
 
@@ -44,7 +48,7 @@ export default class SupportedCities extends Component {
         }
       </div>
       <div className="col-md-6">
-         <CityDetails val={this.state.supported_cities}/> 
+        <CustomerDetails val={this.state.selectedCustomer}/>
       </div>
     </div>)
   }
