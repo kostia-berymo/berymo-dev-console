@@ -1,6 +1,7 @@
 {
+    
     "status": true,
     "message": "Your verification code has been sent!",
     "role": "ROLE_DRIVER",
-    "isUserExists": true
+    "isUserExists": true 
 }
