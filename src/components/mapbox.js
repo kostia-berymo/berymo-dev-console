@@ -35,7 +35,9 @@ const Mapbox = () => {
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
+    
     <div>
+           
       <div className='sidebarStyle'>
         <div>
           Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
@@ -43,6 +45,8 @@ const Mapbox = () => {
       </div>
       <div className='map-container' ref={mapContainerRef} />
     </div>
+    
+    
   );
 };
 
