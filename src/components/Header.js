@@ -18,6 +18,8 @@ const Header = () =>{
          
         <li class="active"><Link to="/">Home</Link></li>
         <li class="active"><Link to="/display">Display</Link></li>
+        <li class="active"><Link to="/mapbox">Mapbox</Link></li>
+        
 
      
         </ul>

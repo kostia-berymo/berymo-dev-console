@@ -1,5 +1,6 @@
 import React,{Component} from 'react';
 import axios from 'axios';
+import mapbox from './mapbox';
 
 
 class signupdata extends Component{
@@ -30,9 +31,9 @@ class signupdata extends Component{
     
     render(){
         return(
-            
-            <center>
-        <div className='panel panel-primary'>
+             <center>
+                 
+               <div className='panel panel-primary'>
         <div className="panel-heading">
          <div className="panel-body">
           State:  {this.state.value.status}
@@ -42,11 +43,13 @@ class signupdata extends Component{
      </div>
     </div>
     </div>
-    <button onClick={()=>this.testfun()}>show</button>
-   </center>
-            
-        ) 
+     <button onClick={()=>this.testfun()}>show</button>
+      
+     </center>
         
+       
+         ) 
+
     }
 }
 export default signupdata
